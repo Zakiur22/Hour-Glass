@@ -12,10 +12,10 @@ import 'package:path_provider/path_provider.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:share_plus/share_plus.dart';
-import 'package:timecop/blocs/projects/bloc.dart';
-import 'package:timecop/blocs/timers/bloc.dart';
-import 'package:timecop/models/project.dart';
-import 'package:timecop/models/timer_entry.dart';
+import 'package:hourglass/blocs/projects/bloc.dart';
+import 'package:hourglass/blocs/timers/bloc.dart';
+import 'package:hourglass/models/project.dart';
+import 'package:hourglass/models/timer_entry.dart';
 import 'package:path/path.dart' as p;
 
 import 'Legend.dart';

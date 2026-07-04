@@ -16,10 +16,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:timecop/l10n.dart';
-import 'package:timecop/screens/dashboard/bloc/dashboard_bloc.dart';
-import 'package:timecop/screens/dashboard/components/FilterButton.dart';
-import 'package:timecop/screens/dashboard/components/PopupMenu.dart';
+import 'package:hourglass/l10n.dart';
+import 'package:hourglass/screens/dashboard/bloc/dashboard_bloc.dart';
+import 'package:hourglass/screens/dashboard/components/FilterButton.dart';
+import 'package:hourglass/screens/dashboard/components/PopupMenu.dart';
 
 class TopBar extends StatefulWidget implements PreferredSizeWidget {
   const TopBar({Key? key}) : super(key: key);

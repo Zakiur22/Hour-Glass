@@ -20,11 +20,11 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:numberpicker/numberpicker.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:timecop/blocs/locale/locale_bloc.dart';
-import 'package:timecop/blocs/notifications/notifications_bloc.dart';
-import 'package:timecop/blocs/settings/bloc.dart';
-import 'package:timecop/blocs/theme/theme_bloc.dart';
-import 'package:timecop/l10n.dart';
+import 'package:hourglass/blocs/locale/locale_bloc.dart';
+import 'package:hourglass/blocs/notifications/notifications_bloc.dart';
+import 'package:hourglass/blocs/settings/bloc.dart';
+import 'package:hourglass/blocs/theme/theme_bloc.dart';
+import 'package:hourglass/l10n.dart';
 
 import 'components/locale_options.dart';
 import 'components/theme_options.dart';

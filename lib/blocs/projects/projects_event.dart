@@ -14,7 +14,7 @@
 
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
-import 'package:timecop/models/project.dart';
+import 'package:hourglass/models/project.dart';
 
 abstract class ProjectsEvent extends Equatable {
   const ProjectsEvent();

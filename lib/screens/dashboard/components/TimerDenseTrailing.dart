@@ -14,7 +14,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:timecop/screens/dashboard/components/RowSeparator.dart';
+import 'package:hourglass/screens/dashboard/components/RowSeparator.dart';
 
 class TimerDenseTrailing extends StatelessWidget {
   final Function(BuildContext) resumeTimer;

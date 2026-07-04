@@ -13,7 +13,7 @@
 // limitations under the License.
 
 import 'package:flutter/widgets.dart';
-import 'package:timecop/models/theme_type.dart';
+import 'package:hourglass/models/theme_type.dart';
 
 abstract class SettingsProvider {
   bool? getBool(String key);

@@ -17,16 +17,16 @@ import 'dart:collection';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
-import 'package:timecop/blocs/settings/settings_bloc.dart';
-import 'package:timecop/blocs/timers/bloc.dart';
-import 'package:timecop/blocs/projects/bloc.dart';
-import 'package:timecop/models/project_description_pair.dart';
-import 'package:timecop/models/timer_entry.dart';
-import 'package:timecop/utils/responsiveness_utils.dart';
-import 'package:timecop/screens/dashboard/bloc/dashboard_bloc.dart';
-import 'package:timecop/screens/dashboard/components/CollapsibleDayGrouping.dart';
-import 'package:timecop/screens/dashboard/components/FilterText.dart';
-import 'package:timecop/screens/dashboard/components/GroupedStoppedTimersRow.dart';
+import 'package:hourglass/blocs/settings/settings_bloc.dart';
+import 'package:hourglass/blocs/timers/bloc.dart';
+import 'package:hourglass/blocs/projects/bloc.dart';
+import 'package:hourglass/models/project_description_pair.dart';
+import 'package:hourglass/models/timer_entry.dart';
+import 'package:hourglass/utils/responsiveness_utils.dart';
+import 'package:hourglass/screens/dashboard/bloc/dashboard_bloc.dart';
+import 'package:hourglass/screens/dashboard/components/CollapsibleDayGrouping.dart';
+import 'package:hourglass/screens/dashboard/components/FilterText.dart';
+import 'package:hourglass/screens/dashboard/components/GroupedStoppedTimersRow.dart';
 import 'StoppedTimerRow.dart';
 
 class _DayGrouping {

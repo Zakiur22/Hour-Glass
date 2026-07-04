@@ -1,11 +1,11 @@
 import 'dart:async';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:timecop/data_providers/data/data_provider.dart';
-import 'package:timecop/data_providers/data/mock_data_provider.dart';
-import 'package:timecop/data_providers/notifications/notifications_provider.dart';
-import 'package:timecop/data_providers/settings/mock_settings_provider.dart';
-import 'package:timecop/data_providers/settings/settings_provider.dart';
-import 'package:timecop/main.dart';
+import 'package:hourglass/data_providers/data/data_provider.dart';
+import 'package:hourglass/data_providers/data/mock_data_provider.dart';
+import 'package:hourglass/data_providers/notifications/notifications_provider.dart';
+import 'package:hourglass/data_providers/settings/mock_settings_provider.dart';
+import 'package:hourglass/data_providers/settings/settings_provider.dart';
+import 'package:hourglass/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_driver/driver_extension.dart';
 import 'dart:ui' as ui;

@@ -17,12 +17,12 @@ import 'dart:collection';
 import 'package:collection/collection.dart' show IterableExtension;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:timecop/blocs/projects/bloc.dart';
-import 'package:timecop/blocs/timers/bloc.dart';
-import 'package:timecop/components/ProjectColour.dart';
-import 'package:timecop/l10n.dart';
-import 'package:timecop/models/project.dart';
-import 'package:timecop/models/timer_entry.dart';
+import 'package:hourglass/blocs/projects/bloc.dart';
+import 'package:hourglass/blocs/timers/bloc.dart';
+import 'package:hourglass/components/ProjectColour.dart';
+import 'package:hourglass/l10n.dart';
+import 'package:hourglass/models/project.dart';
+import 'package:hourglass/models/timer_entry.dart';
 
 class TimeTable extends StatelessWidget {
   final DateTime? startDate;

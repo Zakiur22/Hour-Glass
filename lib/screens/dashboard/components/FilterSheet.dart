@@ -14,10 +14,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:timecop/blocs/projects/projects_bloc.dart';
-import 'package:timecop/components/DateRangeTile.dart';
-import 'package:timecop/components/ProjectTile.dart';
-import 'package:timecop/screens/dashboard/bloc/dashboard_bloc.dart';
+import 'package:hourglass/blocs/projects/projects_bloc.dart';
+import 'package:hourglass/components/DateRangeTile.dart';
+import 'package:hourglass/components/ProjectTile.dart';
+import 'package:hourglass/screens/dashboard/bloc/dashboard_bloc.dart';
 
 class FilterSheet extends StatelessWidget {
   final DashboardBloc dashboardBloc;

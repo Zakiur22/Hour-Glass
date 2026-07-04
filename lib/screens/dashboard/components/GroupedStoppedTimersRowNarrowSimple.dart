@@ -16,13 +16,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:timecop/blocs/projects/bloc.dart';
-import 'package:timecop/components/ProjectColour.dart';
-import 'package:timecop/l10n.dart';
-import 'package:timecop/models/timer_entry.dart';
-import 'package:timecop/screens/dashboard/components/StoppedTimerRow.dart';
+import 'package:hourglass/blocs/projects/bloc.dart';
+import 'package:hourglass/components/ProjectColour.dart';
+import 'package:hourglass/l10n.dart';
+import 'package:hourglass/models/timer_entry.dart';
+import 'package:hourglass/screens/dashboard/components/StoppedTimerRow.dart';
 
-import 'package:timecop/utils/timer_utils.dart';
+import 'package:hourglass/utils/timer_utils.dart';
 
 class GroupedStoppedTimersRowNarrowSimple extends StatefulWidget {
   final List<TimerEntry> timers;

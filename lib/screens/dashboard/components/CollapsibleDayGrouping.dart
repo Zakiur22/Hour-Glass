@@ -14,7 +14,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:timecop/models/timer_entry.dart';
+import 'package:hourglass/models/timer_entry.dart';
 
 class CollapsibleDayGrouping extends StatefulWidget {
   final DateTime date;

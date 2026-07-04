@@ -23,15 +23,15 @@ import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:flutter_typeahead/flutter_typeahead.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:intl/intl.dart';
-import 'package:timecop/blocs/projects/bloc.dart';
-import 'package:timecop/blocs/settings/settings_bloc.dart';
-import 'package:timecop/blocs/timers/bloc.dart';
-import 'package:timecop/components/ProjectColour.dart';
-import 'package:timecop/l10n.dart';
-import 'package:timecop/models/project.dart';
-import 'package:timecop/models/timer_entry.dart';
-import 'package:timecop/models/clone_time.dart';
-import 'package:timecop/themes.dart';
+import 'package:hourglass/blocs/projects/bloc.dart';
+import 'package:hourglass/blocs/settings/settings_bloc.dart';
+import 'package:hourglass/blocs/timers/bloc.dart';
+import 'package:hourglass/components/ProjectColour.dart';
+import 'package:hourglass/l10n.dart';
+import 'package:hourglass/models/project.dart';
+import 'package:hourglass/models/timer_entry.dart';
+import 'package:hourglass/models/clone_time.dart';
+import 'package:hourglass/themes.dart';
 
 enum _DateTimeMenuItems { now }
 

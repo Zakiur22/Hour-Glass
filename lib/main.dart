@@ -19,28 +19,28 @@ import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:timecop/blocs/locale/locale_bloc.dart';
-import 'package:timecop/blocs/notifications/notifications_bloc.dart';
-import 'package:timecop/blocs/projects/bloc.dart';
-import 'package:timecop/blocs/settings/settings_bloc.dart';
-import 'package:timecop/blocs/settings/settings_event.dart';
+import 'package:hourglass/blocs/locale/locale_bloc.dart';
+import 'package:hourglass/blocs/notifications/notifications_bloc.dart';
+import 'package:hourglass/blocs/projects/bloc.dart';
+import 'package:hourglass/blocs/settings/settings_bloc.dart';
+import 'package:hourglass/blocs/settings/settings_event.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:timecop/blocs/settings/settings_state.dart';
-import 'package:timecop/blocs/theme/theme_bloc.dart';
-import 'package:timecop/blocs/timers/bloc.dart';
-import 'package:timecop/data_providers/data/data_provider.dart';
-import 'package:timecop/data_providers/notifications/notifications_provider.dart';
-import 'package:timecop/data_providers/settings/settings_provider.dart';
-import 'package:timecop/fontlicenses.dart';
-import 'package:timecop/l10n.dart';
-import 'package:timecop/models/theme_type.dart';
-import 'package:timecop/screens/dashboard/DashboardScreen.dart';
-import 'package:timecop/themes.dart';
+import 'package:hourglass/blocs/settings/settings_state.dart';
+import 'package:hourglass/blocs/theme/theme_bloc.dart';
+import 'package:hourglass/blocs/timers/bloc.dart';
+import 'package:hourglass/data_providers/data/data_provider.dart';
+import 'package:hourglass/data_providers/notifications/notifications_provider.dart';
+import 'package:hourglass/data_providers/settings/settings_provider.dart';
+import 'package:hourglass/fontlicenses.dart';
+import 'package:hourglass/l10n.dart';
+import 'package:hourglass/models/theme_type.dart';
+import 'package:hourglass/screens/dashboard/DashboardScreen.dart';
+import 'package:hourglass/themes.dart';
 import 'package:flutter_app_badger/flutter_app_badger.dart';
 
-import 'package:timecop/data_providers/data/database_provider.dart';
-import 'package:timecop/data_providers/settings/shared_prefs_settings_provider.dart';
+import 'package:hourglass/data_providers/data/database_provider.dart';
+import 'package:hourglass/data_providers/settings/shared_prefs_settings_provider.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -60,8 +60,8 @@ Future<void> main() async {
   await runMain(settings, data, notifications);
 }
 
-/*import 'package:timecop/data_providers/data/mock_data_provider.dart';
-import 'package:timecop/data_providers/settings/mock_settings_provider.dart';
+/*import 'package:hourglass/data_providers/data/mock_data_provider.dart';
+import 'package:hourglass/data_providers/settings/mock_settings_provider.dart';
 Future<void> main() async {
   final SettingsProvider settings = MockSettingsProvider();
   final DataProvider data = MockDataProvider(Locale.fromSubtags(languageCode: "en"));

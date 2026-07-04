@@ -13,7 +13,7 @@
 // limitations under the License.
 
 import 'package:equatable/equatable.dart';
-import 'package:timecop/models/project.dart';
+import 'package:hourglass/models/project.dart';
 
 class ProjectsState extends Equatable {
   final List<Project> projects;

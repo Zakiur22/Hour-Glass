@@ -13,7 +13,7 @@
 // limitations under the License.
 
 import 'package:equatable/equatable.dart';
-import 'package:timecop/models/timer_entry.dart';
+import 'package:hourglass/models/timer_entry.dart';
 
 class TimersState extends Equatable {
   final List<TimerEntry> timers;

@@ -18,12 +18,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:timecop/blocs/projects/bloc.dart';
-import 'package:timecop/blocs/settings/bloc.dart';
-import 'package:timecop/components/ProjectColour.dart';
-import 'package:timecop/l10n.dart';
-import 'package:timecop/screens/projects/ProjectEditor.dart';
-import 'package:timecop/models/project.dart';
+import 'package:hourglass/blocs/projects/bloc.dart';
+import 'package:hourglass/blocs/settings/bloc.dart';
+import 'package:hourglass/components/ProjectColour.dart';
+import 'package:hourglass/l10n.dart';
+import 'package:hourglass/screens/projects/ProjectEditor.dart';
+import 'package:hourglass/models/project.dart';
 
 enum _ProjectMenuItems { archive, delete }
 

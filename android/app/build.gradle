@@ -57,7 +57,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "ca.hamaluik.timecop"
+        applicationId "com.zakiur22.hourglass"
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion 34 // Upgrade to 34 based on new Play Store requirements
         versionCode flutterVersionCode.toInteger()

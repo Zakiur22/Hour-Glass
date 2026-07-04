@@ -15,7 +15,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/widgets.dart';
-import 'package:timecop/data_providers/settings/settings_provider.dart';
+import 'package:hourglass/data_providers/settings/settings_provider.dart';
 
 part 'locale_event.dart';
 part 'locale_state.dart';

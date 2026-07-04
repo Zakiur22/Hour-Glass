@@ -17,9 +17,9 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:random_color/random_color.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:timecop/data_providers/data/data_provider.dart';
-import 'package:timecop/models/timer_entry.dart';
-import 'package:timecop/models/project.dart';
+import 'package:hourglass/data_providers/data/data_provider.dart';
+import 'package:hourglass/models/timer_entry.dart';
+import 'package:hourglass/models/project.dart';
 import 'package:path/path.dart' as p;
 import 'package:xdg_directories/xdg_directories.dart';
 

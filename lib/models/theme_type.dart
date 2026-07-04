@@ -13,7 +13,7 @@
 // limitations under the License.
 
 import 'package:flutter/cupertino.dart';
-import 'package:timecop/l10n.dart';
+import 'package:hourglass/l10n.dart';
 
 enum ThemeType {
   auto,

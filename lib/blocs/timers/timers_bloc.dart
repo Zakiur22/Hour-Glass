@@ -14,10 +14,10 @@
 
 import 'dart:async';
 import 'package:bloc/bloc.dart';
-import 'package:timecop/data_providers/data/data_provider.dart';
-import 'package:timecop/data_providers/settings/settings_provider.dart';
-import 'package:timecop/data_providers/notifications/notifications_provider.dart';
-import 'package:timecop/models/timer_entry.dart';
+import 'package:hourglass/data_providers/data/data_provider.dart';
+import 'package:hourglass/data_providers/settings/settings_provider.dart';
+import 'package:hourglass/data_providers/notifications/notifications_provider.dart';
+import 'package:hourglass/models/timer_entry.dart';
 import './bloc.dart';
 
 class TimersBloc extends Bloc<TimersEvent, TimersState> {

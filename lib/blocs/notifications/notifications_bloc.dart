@@ -14,7 +14,7 @@
 
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:timecop/data_providers/notifications/notifications_provider.dart';
+import 'package:hourglass/data_providers/notifications/notifications_provider.dart';
 
 part 'notifications_event.dart';
 part 'notifications_state.dart';

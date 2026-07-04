@@ -15,8 +15,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:timecop/blocs/locale/locale_bloc.dart';
-import 'package:timecop/l10n.dart';
+import 'package:hourglass/blocs/locale/locale_bloc.dart';
+import 'package:hourglass/l10n.dart';
 
 class LocaleOptions extends StatelessWidget {
   final LocaleBloc bloc;

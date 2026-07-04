@@ -13,8 +13,8 @@
 // limitations under the License.
 
 import 'package:flutter/material.dart';
-import 'package:timecop/models/project.dart';
-import 'package:timecop/themes.dart';
+import 'package:hourglass/models/project.dart';
+import 'package:hourglass/themes.dart';
 
 class ProjectColour extends StatelessWidget {
   static const double _size = 20;

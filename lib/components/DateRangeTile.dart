@@ -18,10 +18,10 @@ import 'package:flutter_datetime_picker_plus/flutter_datetime_picker_plus.dart'
     as dt;
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:intl/intl.dart';
-import 'package:timecop/blocs/settings/settings_bloc.dart';
-import 'package:timecop/l10n.dart';
-import 'package:timecop/models/clone_time.dart';
-import 'package:timecop/models/filter_preset.dart';
+import 'package:hourglass/blocs/settings/settings_bloc.dart';
+import 'package:hourglass/l10n.dart';
+import 'package:hourglass/models/clone_time.dart';
+import 'package:hourglass/models/filter_preset.dart';
 
 class DateRangeTile extends StatelessWidget {
   final DateTime? startDate;

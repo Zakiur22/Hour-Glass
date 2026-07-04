@@ -13,8 +13,8 @@
 // limitations under the License.
 
 import 'package:equatable/equatable.dart';
-import 'package:timecop/blocs/projects/projects_bloc.dart';
-import 'package:timecop/blocs/timers/timers_bloc.dart';
+import 'package:hourglass/blocs/projects/projects_bloc.dart';
+import 'package:hourglass/blocs/timers/timers_bloc.dart';
 
 abstract class SettingsEvent extends Equatable {
   const SettingsEvent();

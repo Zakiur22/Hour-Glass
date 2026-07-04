@@ -20,13 +20,13 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
-import 'package:timecop/blocs/projects/projects_bloc.dart';
-import 'package:timecop/blocs/timers/bloc.dart';
-import 'package:timecop/l10n.dart';
-import 'package:timecop/models/project.dart';
-import 'package:timecop/models/timer_entry.dart';
-import 'package:timecop/models/start_of_week.dart';
-import 'package:timecop/themes.dart';
+import 'package:hourglass/blocs/projects/projects_bloc.dart';
+import 'package:hourglass/blocs/timers/bloc.dart';
+import 'package:hourglass/l10n.dart';
+import 'package:hourglass/models/project.dart';
+import 'package:hourglass/models/timer_entry.dart';
+import 'package:hourglass/models/start_of_week.dart';
+import 'package:hourglass/themes.dart';
 
 import 'Legend.dart';
 

@@ -14,8 +14,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:timecop/data_providers/l10n/fluent_l10n_provider.dart';
-import 'package:timecop/data_providers/l10n/l10n_provider.dart';
+import 'package:hourglass/data_providers/l10n/fluent_l10n_provider.dart';
+import 'package:hourglass/data_providers/l10n/l10n_provider.dart';
 
 class L10N {
   final Locale locale;

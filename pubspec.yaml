@@ -1,4 +1,4 @@
-name: timecop
+name: hourglass
 description: Simple private time tracking.
 version: 1.8.1+45
 publish_to: none

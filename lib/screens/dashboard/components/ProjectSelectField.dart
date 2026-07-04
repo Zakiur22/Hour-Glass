@@ -15,13 +15,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:timecop/blocs/projects/bloc.dart';
-import 'package:timecop/components/ProjectColour.dart';
-import 'package:timecop/l10n.dart';
-import 'package:timecop/models/project.dart';
-import 'package:timecop/screens/dashboard/bloc/dashboard_bloc.dart';
-import 'package:timecop/screens/projects/ProjectsScreen.dart';
-import 'package:timecop/themes.dart';
+import 'package:hourglass/blocs/projects/bloc.dart';
+import 'package:hourglass/components/ProjectColour.dart';
+import 'package:hourglass/l10n.dart';
+import 'package:hourglass/models/project.dart';
+import 'package:hourglass/screens/dashboard/bloc/dashboard_bloc.dart';
+import 'package:hourglass/screens/projects/ProjectsScreen.dart';
+import 'package:hourglass/themes.dart';
 
 class ProjectSelectField extends StatefulWidget {
   const ProjectSelectField({Key? key}) : super(key: key);

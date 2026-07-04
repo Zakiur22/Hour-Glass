@@ -13,10 +13,10 @@
 // limitations under the License.
 
 import 'package:flutter/material.dart';
-import 'package:timecop/components/ProjectColour.dart';
-import 'package:timecop/l10n.dart';
-import 'package:timecop/models/project.dart';
-import 'package:timecop/themes.dart';
+import 'package:hourglass/components/ProjectColour.dart';
+import 'package:hourglass/l10n.dart';
+import 'package:hourglass/models/project.dart';
+import 'package:hourglass/themes.dart';
 
 class ProjectTag extends StatelessWidget {
   final Project? project;

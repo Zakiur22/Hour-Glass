@@ -21,11 +21,11 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:intl/intl.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:share_plus/share_plus.dart';
-import 'package:timecop/blocs/projects/projects_bloc.dart';
-import 'package:timecop/blocs/settings/bloc.dart';
-import 'package:timecop/blocs/timers/timers_bloc.dart';
-import 'package:timecop/data_providers/data/database_provider.dart';
-import 'package:timecop/l10n.dart';
+import 'package:hourglass/blocs/projects/projects_bloc.dart';
+import 'package:hourglass/blocs/settings/bloc.dart';
+import 'package:hourglass/blocs/timers/timers_bloc.dart';
+import 'package:hourglass/data_providers/data/database_provider.dart';
+import 'package:hourglass/l10n.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 enum ExportMenuItem {

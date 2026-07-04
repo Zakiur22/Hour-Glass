@@ -13,8 +13,8 @@
 // limitations under the License.
 
 import 'package:flutter/material.dart';
-import 'package:timecop/models/project.dart';
-import 'package:timecop/models/timer_entry.dart';
+import 'package:hourglass/models/project.dart';
+import 'package:hourglass/models/timer_entry.dart';
 
 abstract class DataProvider {
   Future<Project> createProject({required String name, Color? colour});

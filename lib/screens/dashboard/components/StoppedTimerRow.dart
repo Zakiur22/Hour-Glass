@@ -14,17 +14,17 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:timecop/blocs/projects/projects_bloc.dart';
-import 'package:timecop/blocs/settings/settings_bloc.dart';
-import 'package:timecop/blocs/timers/timers_bloc.dart';
-import 'package:timecop/blocs/timers/timers_event.dart';
-import 'package:timecop/l10n.dart';
-import 'package:timecop/models/project.dart';
-import 'package:timecop/models/timer_entry.dart';
-import 'package:timecop/utils/responsiveness_utils.dart';
-import 'package:timecop/screens/dashboard/components/StoppedTimerRowNarrowDense.dart';
-import 'package:timecop/screens/dashboard/components/StoppedTimerRowNarrowSimple.dart';
-import 'package:timecop/screens/dashboard/components/StoppedTimerRowWide.dart';
+import 'package:hourglass/blocs/projects/projects_bloc.dart';
+import 'package:hourglass/blocs/settings/settings_bloc.dart';
+import 'package:hourglass/blocs/timers/timers_bloc.dart';
+import 'package:hourglass/blocs/timers/timers_event.dart';
+import 'package:hourglass/l10n.dart';
+import 'package:hourglass/models/project.dart';
+import 'package:hourglass/models/timer_entry.dart';
+import 'package:hourglass/utils/responsiveness_utils.dart';
+import 'package:hourglass/screens/dashboard/components/StoppedTimerRowNarrowDense.dart';
+import 'package:hourglass/screens/dashboard/components/StoppedTimerRowNarrowSimple.dart';
+import 'package:hourglass/screens/dashboard/components/StoppedTimerRowWide.dart';
 
 class StoppedTimerRow extends StatelessWidget {
   final TimerEntry timer;

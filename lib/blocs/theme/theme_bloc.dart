@@ -14,8 +14,8 @@
 
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:timecop/data_providers/settings/settings_provider.dart';
-import 'package:timecop/models/theme_type.dart';
+import 'package:hourglass/data_providers/settings/settings_provider.dart';
+import 'package:hourglass/models/theme_type.dart';
 
 part 'theme_event.dart';
 part 'theme_state.dart';

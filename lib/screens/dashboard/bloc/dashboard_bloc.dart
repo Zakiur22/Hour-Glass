@@ -15,9 +15,9 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:timecop/blocs/projects/bloc.dart';
-import 'package:timecop/blocs/settings/settings_bloc.dart';
-import 'package:timecop/models/project.dart';
+import 'package:hourglass/blocs/projects/bloc.dart';
+import 'package:hourglass/blocs/settings/settings_bloc.dart';
+import 'package:hourglass/models/project.dart';
 
 part 'dashboard_event.dart';
 part 'dashboard_state.dart';

@@ -14,7 +14,7 @@
 
 import 'package:flutter/rendering.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:timecop/models/theme_type.dart';
+import 'package:hourglass/models/theme_type.dart';
 import 'settings_provider.dart';
 
 class SharedPrefsSettingsProvider extends SettingsProvider {

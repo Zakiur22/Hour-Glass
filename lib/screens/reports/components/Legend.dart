@@ -13,9 +13,9 @@
 // limitations under the License.
 
 import 'package:flutter/material.dart';
-import 'package:timecop/components/ProjectColour.dart';
-import 'package:timecop/l10n.dart';
-import 'package:timecop/models/project.dart';
+import 'package:hourglass/components/ProjectColour.dart';
+import 'package:hourglass/l10n.dart';
+import 'package:hourglass/models/project.dart';
 
 class Legend extends StatelessWidget {
   final Iterable<Project?> projects;

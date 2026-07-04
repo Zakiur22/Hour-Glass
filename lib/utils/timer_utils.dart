@@ -13,8 +13,8 @@
 // limitations under the License.
 
 import 'package:flutter/material.dart';
-import 'package:timecop/l10n.dart';
-import 'package:timecop/themes.dart';
+import 'package:hourglass/l10n.dart';
+import 'package:hourglass/themes.dart';
 
 class TimerUtils {
   static String formatDescription(BuildContext context, String? description) {

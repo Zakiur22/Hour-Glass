@@ -13,9 +13,9 @@
 // limitations under the License.
 
 import 'package:flutter/material.dart';
-import 'package:timecop/data_providers/data/data_provider.dart';
-import 'package:timecop/models/project.dart';
-import 'package:timecop/models/timer_entry.dart';
+import 'package:hourglass/data_providers/data/data_provider.dart';
+import 'package:hourglass/models/project.dart';
+import 'package:hourglass/models/timer_entry.dart';
 import 'dart:math';
 
 class MockDataProvider extends DataProvider {

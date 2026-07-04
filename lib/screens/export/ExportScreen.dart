@@ -21,15 +21,15 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:intl/intl.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:share_plus/share_plus.dart';
-import 'package:timecop/blocs/projects/projects_bloc.dart';
-import 'package:timecop/blocs/settings/bloc.dart';
-import 'package:timecop/components/DateRangeTile.dart';
-import 'package:timecop/components/ProjectTile.dart';
-import 'package:timecop/l10n.dart';
-import 'package:timecop/models/project.dart';
-import 'package:timecop/models/timer_entry.dart';
-import 'package:timecop/screens/export/components/ExportMenu.dart';
-import 'package:timecop/utils/export_utils.dart';
+import 'package:hourglass/blocs/projects/projects_bloc.dart';
+import 'package:hourglass/blocs/settings/bloc.dart';
+import 'package:hourglass/components/DateRangeTile.dart';
+import 'package:hourglass/components/ProjectTile.dart';
+import 'package:hourglass/l10n.dart';
+import 'package:hourglass/models/project.dart';
+import 'package:hourglass/models/timer_entry.dart';
+import 'package:hourglass/screens/export/components/ExportMenu.dart';
+import 'package:hourglass/utils/export_utils.dart';
 
 class ExportScreen extends StatefulWidget {
   const ExportScreen({Key? key}) : super(key: key);

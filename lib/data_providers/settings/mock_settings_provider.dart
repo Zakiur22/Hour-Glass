@@ -15,8 +15,8 @@
 // ignore_for_file: avoid_renaming_method_parameters
 
 import 'package:flutter/rendering.dart';
-import 'package:timecop/data_providers/settings/settings_provider.dart';
-import 'package:timecop/models/theme_type.dart';
+import 'package:hourglass/data_providers/settings/settings_provider.dart';
+import 'package:hourglass/models/theme_type.dart';
 
 class MockSettingsProvider extends SettingsProvider {
   late Map<String, dynamic> values;

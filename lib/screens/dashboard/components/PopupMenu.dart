@@ -14,12 +14,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:timecop/l10n.dart';
-import 'package:timecop/screens/about/AboutScreen.dart';
-import 'package:timecop/screens/export/ExportScreen.dart';
-import 'package:timecop/screens/projects/ProjectsScreen.dart';
-import 'package:timecop/screens/reports/ReportsScreen.dart';
-import 'package:timecop/screens/settings/SettingsScreen.dart';
+import 'package:hourglass/l10n.dart';
+import 'package:hourglass/screens/about/AboutScreen.dart';
+import 'package:hourglass/screens/export/ExportScreen.dart';
+import 'package:hourglass/screens/projects/ProjectsScreen.dart';
+import 'package:hourglass/screens/reports/ReportsScreen.dart';
+import 'package:hourglass/screens/settings/SettingsScreen.dart';
 
 enum MenuItem {
   projects,

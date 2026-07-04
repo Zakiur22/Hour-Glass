@@ -13,8 +13,8 @@
 // limitations under the License.
 
 import 'package:bloc/bloc.dart';
-import 'package:timecop/data_providers/data/data_provider.dart';
-import 'package:timecop/models/project.dart';
+import 'package:hourglass/data_providers/data/data_provider.dart';
+import 'package:hourglass/models/project.dart';
 import './bloc.dart';
 
 class ProjectsBloc extends Bloc<ProjectsEvent, ProjectsState> {

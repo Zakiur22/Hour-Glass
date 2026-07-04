@@ -16,14 +16,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:intl/intl.dart' as intl;
-import 'package:timecop/blocs/projects/bloc.dart';
-import 'package:timecop/models/timer_entry.dart';
-import 'package:timecop/screens/dashboard/components/ProjectTag.dart';
-import 'package:timecop/screens/dashboard/components/TimerDenseTrailing.dart';
-import 'package:timecop/screens/timer/TimerEditor.dart';
-import 'package:timecop/themes.dart';
+import 'package:hourglass/blocs/projects/bloc.dart';
+import 'package:hourglass/models/timer_entry.dart';
+import 'package:hourglass/screens/dashboard/components/ProjectTag.dart';
+import 'package:hourglass/screens/dashboard/components/TimerDenseTrailing.dart';
+import 'package:hourglass/screens/timer/TimerEditor.dart';
+import 'package:hourglass/themes.dart';
 
-import 'package:timecop/utils/timer_utils.dart';
+import 'package:hourglass/utils/timer_utils.dart';
 
 class StoppedTimerRowNarrowDense extends StatelessWidget {
   final TimerEntry timer;

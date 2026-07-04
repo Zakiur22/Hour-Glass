@@ -16,11 +16,11 @@ import 'dart:io';
 
 import 'package:bloc/bloc.dart';
 import 'package:flutter_app_badger/flutter_app_badger.dart';
-import 'package:timecop/blocs/projects/projects_event.dart';
-import 'package:timecop/blocs/timers/timers_event.dart';
-import 'package:timecop/data_providers/data/data_provider.dart';
-import 'package:timecop/data_providers/data/database_provider.dart';
-import 'package:timecop/data_providers/settings/settings_provider.dart';
+import 'package:hourglass/blocs/projects/projects_event.dart';
+import 'package:hourglass/blocs/timers/timers_event.dart';
+import 'package:hourglass/data_providers/data/data_provider.dart';
+import 'package:hourglass/data_providers/data/database_provider.dart';
+import 'package:hourglass/data_providers/settings/settings_provider.dart';
 
 import './bloc.dart';
 

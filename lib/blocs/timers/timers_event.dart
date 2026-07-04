@@ -13,8 +13,8 @@
 // limitations under the License.
 
 import 'package:equatable/equatable.dart';
-import 'package:timecop/models/project.dart';
-import 'package:timecop/models/timer_entry.dart';
+import 'package:hourglass/models/project.dart';
+import 'package:hourglass/models/timer_entry.dart';
 
 abstract class TimersEvent extends Equatable {
   const TimersEvent();
