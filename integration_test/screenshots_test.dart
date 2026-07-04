@@ -58,7 +58,7 @@ void main() {
           create: (_) => SettingsBloc(settings, data),
         ),
         BlocProvider<TimersBloc>(
-          create: (_) => TimersBloc(data, settings),
+          create: (_) => TimersBloc(data, settings, notificationsProvider),
         ),
         BlocProvider<ProjectsBloc>(
           create: (_) => ProjectsBloc(data),
