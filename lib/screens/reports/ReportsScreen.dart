@@ -27,6 +27,7 @@ import 'package:timecop/screens/reports/components/ProjectBreakdown.dart';
 import 'package:timecop/screens/reports/components/TimeTable.dart';
 import 'package:timecop/screens/reports/components/WeekdayAverages.dart';
 import 'package:timecop/screens/reports/components/WeeklyTotals.dart';
+import 'package:timecop/screens/reports/components/WeeklyProductivityDashboard.dart';
 
 class ReportsScreen extends StatefulWidget {
   const ReportsScreen({Key? key}) : super(key: key);
@@ -100,11 +101,17 @@ class _ReportsScreenState extends State<ReportsScreen> {
                               endDate: _endDate,
                               selectedProjects: selectedProjects,
                             );
+                          case 4:
+                            return WeeklyProductivityDashboard(
+                              startDate: _startDate,
+                              endDate: _endDate,
+                              selectedProjects: selectedProjects,
+                            );
                         }
                         return const SizedBox();
                       }));
                 },
-                itemCount: 4,
+                itemCount: 5,
                 pagination: SwiperPagination(
                     builder: DotSwiperPaginationBuilder(
                   color: Theme.of(context).disabledColor,
