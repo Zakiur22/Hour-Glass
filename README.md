@@ -4,49 +4,10 @@
 A simple, secure, and privacy-respecting time tracker that gets the job done without getting in your way.
 
 
-<p align="center">
-  <img src="https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&w=1200&q=80" alt="HourGlass Banner" width="100%" style="border-radius: 8px;" />
-</p>
 
-
-<p align="center">
-  <img alt="HourGlass App Icon" width="128" height="128" src="icon.no-bg.cyan.svg">
-</p>
 
 
 **HourGlass** is an offline-first, mobile-first time tracking tool. It is designed for developers, freelancers, and professionals who need to keep accurate timesheets without compromising their personal data or suffering from over-engineered, cluttered layouts.
-
-
----
-
-
-## 📱 Visual Showcase & Screenshots
-
-
-Here is a visual overview of the clean, modern, and high-fidelity interface of HourGlass:
-
-
-<p align="center">
-  <img src="screenshots/linux/dashboard.png" width="31%" alt="HourGlass Dashboard" />
-  &nbsp;
-  <img src="screenshots/linux/editor.png" width="31%" alt="HourGlass Timer Editor" />
-  &nbsp;
-  <img src="screenshots/linux/projects.png" width="31%" alt="HourGlass Project Management" />
-</p>
-
-<p align="center">
-  <img src="screenshots/linux/reports-pie.png" width="31%" alt="HourGlass Share Breakdown Chart" />
-  &nbsp;
-  <img src="screenshots/linux/reports-bar.png" width="31%" alt="HourGlass Bar Timeline Reports" />
-  &nbsp;
-  <img src="screenshots/linux/export.png" width="31%" alt="HourGlass Local Data Exporter" />
-</p>
-
-<p align="center">
-  <img src="screenshots/linux/settings.png" width="31%" alt="HourGlass Preferences Panel" />
-  &nbsp;
-  <img src="screenshots/linux/about.png" width="31%" alt="HourGlass About Panel" />
-</p>
 
 
 ---
