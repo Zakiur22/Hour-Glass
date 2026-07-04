@@ -37,50 +37,47 @@ class LocaleOptions extends StatelessWidget {
             onTap: () async {
               Locale? newLocale = await showModalBottomSheet<Locale>(
                   context: context,
-                  builder: (context) => ListView(
-                        shrinkWrap: true,
-                        children: <Widget>[
-                          RadioListTile<Locale?>(
-                            title: Text(L10N.of(context).tr.automaticLanguage),
-                            value: null,
-                            groupValue: state.locale,
-                            onChanged: (Locale? type) {
-                              bloc.add(ChangeLocaleEvent(type));
-                              Navigator.pop(context, type);
-                            },
-                          ),
-                        ]
-                            .followedBy([
-                              const Locale('ar'),
-                              const Locale('cs'),
-                              const Locale('da'),
-                              const Locale('de'),
-                              const Locale('en'),
-                              const Locale('es'),
-                              const Locale('fr'),
-                              const Locale('hi'),
-                              const Locale('id'),
-                              const Locale('it'),
-                              const Locale('ja'),
-                              const Locale('ko'),
-                              const Locale('nb', 'NO'),
-                              const Locale('pt'),
-                              const Locale('ru'),
-                              const Locale('tr'),
-                              const Locale('zh', 'CN'),
-                              const Locale('zh', 'TW'),
-                            ].map(
-                              (l) => RadioListTile<Locale>(
-                                title: Text(L10N.of(context).tr.langName(l)),
-                                value: l,
-                                groupValue: state.locale,
-                                onChanged: (Locale? type) {
-                                  bloc.add(ChangeLocaleEvent(type));
-                                  Navigator.pop(context, type);
-                                },
-                              ),
-                            ))
-                            .toList(),
+                  builder: (context) => RadioGroup<Locale?>(
+                        groupValue: state.locale,
+                        onChanged: (Locale? type) {
+                          bloc.add(ChangeLocaleEvent(type));
+                          Navigator.pop(context, type);
+                        },
+                        child: ListView(
+                          shrinkWrap: true,
+                          children: <Widget>[
+                            RadioListTile<Locale?>(
+                              title: Text(L10N.of(context).tr.automaticLanguage),
+                              value: null,
+                            ),
+                          ]
+                              .followedBy([
+                                const Locale('ar'),
+                                const Locale('cs'),
+                                const Locale('da'),
+                                const Locale('de'),
+                                const Locale('en'),
+                                const Locale('es'),
+                                const Locale('fr'),
+                                const Locale('hi'),
+                                const Locale('id'),
+                                const Locale('it'),
+                                const Locale('ja'),
+                                const Locale('ko'),
+                                const Locale('nb', 'NO'),
+                                const Locale('pt'),
+                                const Locale('ru'),
+                                const Locale('tr'),
+                                const Locale('zh', 'CN'),
+                                const Locale('zh', 'TW'),
+                              ].map(
+                                (l) => RadioListTile<Locale?>(
+                                  title: Text(L10N.of(context).tr.langName(l)),
+                                  value: l,
+                                ),
+                              ))
+                              .toList(),
+                        ),
                       ));
 
               bloc.add(ChangeLocaleEvent(newLocale));

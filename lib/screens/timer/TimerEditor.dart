@@ -141,7 +141,7 @@ class _TimerEditorState extends State<TimerEditor> {
                   Navigator.of(context).pop();
                 }
               },
-              icon: Icon(FontAwesomeIcons.trash))
+              icon: const Icon(FontAwesomeIcons.trash))
         ],
       ),
       body: Form(
@@ -321,7 +321,7 @@ class _TimerEditorState extends State<TimerEditor> {
                     visualDensity: VisualDensity.compact,
                     padding: const EdgeInsetsDirectional.only(start: 16),
                     tooltip: L10N.of(context).tr.remove,
-                    icon: Icon(FontAwesomeIcons.circleMinus),
+                    icon: const Icon(FontAwesomeIcons.circleMinus),
                     onPressed: () {
                       setState(() {
                         _endTime = null;
@@ -426,7 +426,7 @@ class _TimerEditorState extends State<TimerEditor> {
       floatingActionButton: FloatingActionButton(
         key: const Key("saveDetails"),
         tooltip: L10N.of(context).tr.save,
-        child: Stack(
+        child: const Stack(
           // shenanigans to properly centre the icon (font awesome glyphs are variable
           // width but the library currently doesn't deal with that)
           fit: StackFit.expand,

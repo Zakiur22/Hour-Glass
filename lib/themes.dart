@@ -83,7 +83,7 @@ class ThemeUtil {
       appBarScrolledUnderElevation: 4);
 
   static Color getOnBackgroundLighter(BuildContext context) =>
-      Theme.of(context).colorScheme.onSurface.withOpacity(0.62);
+      Theme.of(context).colorScheme.onSurface.withValues(alpha: 0.62);
 
   static ThemeData getThemeFromColors(
           {required Brightness brightness,

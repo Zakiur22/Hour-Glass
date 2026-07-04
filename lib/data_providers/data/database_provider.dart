@@ -142,7 +142,7 @@ class DatabaseProvider extends DataProvider {
 
     int id = await _db.rawInsert(
         "insert into projects(name, colour, archived) values(?, ?, ?)",
-        <dynamic>[name, colour.value, archived ? 1 : 0]);
+        <dynamic>[name, colour.toARGB32(), archived ? 1 : 0]);
     return Project(id: id, name: name, colour: colour, archived: archived);
   }
 
@@ -178,7 +178,7 @@ class DatabaseProvider extends DataProvider {
         "update projects set name=?, colour=?, archived=? where id=?",
         <dynamic>[
           project.name,
-          project.colour.value,
+          project.colour.toARGB32(),
           project.archived ? 1 : 0,
           project.id
         ]);

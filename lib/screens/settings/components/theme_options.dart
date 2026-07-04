@@ -35,71 +35,55 @@ class ThemeOptions extends StatelessWidget {
             trailing: Icon(L10N.of(context).rtl
                 ? FontAwesomeIcons.chevronLeft
                 : FontAwesomeIcons.chevronRight),
-            leading: Icon(FontAwesomeIcons.palette),
+            leading: const Icon(FontAwesomeIcons.palette),
             onTap: () async {
               ThemeType? oldTheme = state.theme;
               ThemeType? newTheme = await showModalBottomSheet<ThemeType>(
                   context: context,
-                  builder: (context) => ListView(
-                        shrinkWrap: true,
-                        children: <Widget>[
-                          RadioListTile<ThemeType>(
-                            key: const Key("themeAuto"),
-                            title: Text(L10N.of(context).tr.auto),
-                            value: ThemeType.auto,
-                            groupValue: state.theme,
-                            onChanged: (ThemeType? type) =>
-                                Navigator.pop(context, type),
-                          ),
-                          RadioListTile<ThemeType>(
-                            key: const Key("themeLight"),
-                            title: Text(L10N.of(context).tr.light),
-                            value: ThemeType.light,
-                            groupValue: state.theme,
-                            onChanged: (ThemeType? type) =>
-                                Navigator.pop(context, type),
-                          ),
-                          RadioListTile<ThemeType>(
-                            key: const Key("themeDark"),
-                            title: Text(L10N.of(context).tr.dark),
-                            value: ThemeType.dark,
-                            groupValue: state.theme,
-                            onChanged: (ThemeType? type) =>
-                                Navigator.pop(context, type),
-                          ),
-                          RadioListTile<ThemeType>(
-                            key: const Key("themeBlack"),
-                            title: Text(L10N.of(context).tr.black),
-                            value: ThemeType.black,
-                            groupValue: state.theme,
-                            onChanged: (ThemeType? type) =>
-                                Navigator.pop(context, type),
-                          ),
-                          RadioListTile<ThemeType>(
-                            key: const Key("themeAutoMaterialYou"),
-                            title: Text(L10N.of(context).tr.autoMaterialYou),
-                            value: ThemeType.autoMaterialYou,
-                            groupValue: state.theme,
-                            onChanged: (ThemeType? type) =>
-                                Navigator.pop(context, type),
-                          ),
-                          RadioListTile<ThemeType>(
-                            key: const Key("themeLightMaterialYou"),
-                            title: Text(L10N.of(context).tr.lightMaterialYou),
-                            value: ThemeType.lightMaterialYou,
-                            groupValue: state.theme,
-                            onChanged: (ThemeType? type) =>
-                                Navigator.pop(context, type),
-                          ),
-                          RadioListTile<ThemeType>(
-                            key: const Key("themeDarkMaterialYou"),
-                            title: Text(L10N.of(context).tr.darkMaterialYou),
-                            value: ThemeType.darkMaterialYou,
-                            groupValue: state.theme,
-                            onChanged: (ThemeType? type) =>
-                                Navigator.pop(context, type),
-                          ),
-                        ],
+                  builder: (context) => RadioGroup<ThemeType>(
+                        groupValue: state.theme,
+                        onChanged: (ThemeType? type) =>
+                            Navigator.pop(context, type),
+                        child: ListView(
+                          shrinkWrap: true,
+                          children: <Widget>[
+                            RadioListTile<ThemeType>(
+                              key: const Key("themeAuto"),
+                              title: Text(L10N.of(context).tr.auto),
+                              value: ThemeType.auto,
+                            ),
+                            RadioListTile<ThemeType>(
+                              key: const Key("themeLight"),
+                              title: Text(L10N.of(context).tr.light),
+                              value: ThemeType.light,
+                            ),
+                            RadioListTile<ThemeType>(
+                              key: const Key("themeDark"),
+                              title: Text(L10N.of(context).tr.dark),
+                              value: ThemeType.dark,
+                            ),
+                            RadioListTile<ThemeType>(
+                              key: const Key("themeBlack"),
+                              title: Text(L10N.of(context).tr.black),
+                              value: ThemeType.black,
+                            ),
+                            RadioListTile<ThemeType>(
+                              key: const Key("themeAutoMaterialYou"),
+                              title: Text(L10N.of(context).tr.autoMaterialYou),
+                              value: ThemeType.autoMaterialYou,
+                            ),
+                            RadioListTile<ThemeType>(
+                              key: const Key("themeLightMaterialYou"),
+                              title: Text(L10N.of(context).tr.lightMaterialYou),
+                              value: ThemeType.lightMaterialYou,
+                            ),
+                            RadioListTile<ThemeType>(
+                              key: const Key("themeDarkMaterialYou"),
+                              title: Text(L10N.of(context).tr.darkMaterialYou),
+                              value: ThemeType.darkMaterialYou,
+                            ),
+                          ],
+                        ),
                       ));
 
               bloc.add(ChangeThemeEvent(newTheme ?? oldTheme));

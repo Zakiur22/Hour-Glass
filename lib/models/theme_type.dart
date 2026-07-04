@@ -59,8 +59,6 @@ enum ThemeType {
         return L10N.of(context).tr.lightMaterialYou;
       case ThemeType.darkMaterialYou:
         return L10N.of(context).tr.darkMaterialYou;
-      default:
-        return null;
     }
   }
 
