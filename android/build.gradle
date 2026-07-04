@@ -29,10 +29,6 @@ subprojects {
                 if (namespace == null) {
                     namespace = prj.group.toString()
                 }
-                compileSdkVersion 34
-                defaultConfig {
-                    targetSdkVersion 34
-                }
             }
         }
     }
@@ -41,6 +37,21 @@ subprojects {
     } else {
         project.afterEvaluate {
             configureProject(project)
+        }
+    }
+}
+
+subprojects {
+    if (project.name != "app") {
+        afterEvaluate { prj ->
+            if (prj.hasProperty('android')) {
+                prj.android {
+                    compileSdkVersion 34
+                    defaultConfig {
+                        targetSdkVersion 34
+                    }
+                }
+            }
         }
     }
 }
