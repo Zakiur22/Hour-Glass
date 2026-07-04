@@ -14,10 +14,8 @@ import 'package:pdf/widgets.dart' as pw;
 import 'package:share_plus/share_plus.dart';
 import 'package:timecop/blocs/projects/bloc.dart';
 import 'package:timecop/blocs/timers/bloc.dart';
-import 'package:timecop/l10n.dart';
 import 'package:timecop/models/project.dart';
 import 'package:timecop/models/timer_entry.dart';
-import 'package:timecop/themes.dart';
 import 'package:path/path.dart' as p;
 
 import 'Legend.dart';
@@ -567,6 +565,7 @@ class _WeeklyProductivityDashboardState
                           toY: _dailyHours[index],
                           color: _dailyHours[index] > 0
                               ? theme.colorScheme.primary
+                              // ignore: deprecated_member_use
                               : theme.disabledColor.withOpacity(0.2),
                           width: 16,
                           borderRadius: const BorderRadius.only(
@@ -661,10 +660,12 @@ class _WeeklyProductivityDashboardState
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),
         side: BorderSide(
+          // ignore: deprecated_member_use
           color: theme.dividerColor.withOpacity(0.1),
           width: 1,
         ),
       ),
+      // ignore: deprecated_member_use
       color: theme.cardColor.withOpacity(0.5),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
@@ -673,6 +674,7 @@ class _WeeklyProductivityDashboardState
             Container(
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
+                // ignore: deprecated_member_use
                 color: iconColor.withOpacity(0.1),
                 shape: BoxShape.circle,
               ),
