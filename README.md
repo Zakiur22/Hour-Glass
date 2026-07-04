@@ -28,6 +28,7 @@ Time tracking in and of itself is rather straightforward (hence all the apps on 
 * Keep track of tasks with multiple parallel timers that can be started with the tap of a button
 * Associate timers with projects to group your work (or don't)
 * Start, stop, edit, and delete timers whenever with no fuss
+* Beautifully visualized **Weekly Visual Productivity Reports and KPI Dashboard** with customizable project-based bar/pie charts and instant PDF export capabilities
 * Export data as a `.csv` file, filtered by timespans and projects
 * Export the app's database for full access to all of its data
 * Automatic light mode / dark mode based on your device settings
