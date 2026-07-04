@@ -1,70 +1,85 @@
-<h1 align="center">
-  Time Cop
-  <br>
-  <a href="https://timecop.app"><img alt="icon" width="128" height="128" src="icon.no-bg.cyan.svg"></a>
-</h1>
-<div align="center">
-  A time tracking app that respects your privacy and gets the job done without getting too fancy.
-</div>
-<br />
-<div align="center">
-  <img alt="GitHub" src="https://img.shields.io/github/license/hamaluik/timecop?style=flat-square">
-  <a href="https://hosted.weblate.org/engage/timecop/">
-    <img src="https://hosted.weblate.org/widgets/timecop/-/svg-badge.svg" alt="Translation status" />
-  </a>
-</div>
+# ⏳ HourGlass
 
-## Motivation
+A simple, secure, and privacy-respecting time tracker that gets the job done without getting in your way.
 
-I'd rather not do time-tracking at all, but since its a necessity for my work, it's either use an app or keep track of things manually (which I'm terrible at). There are many time tracking apps on the app stores (and I have tried several of them), but each of them has at least one pain point that eventually drives me off—some cost more money than I think they should, others have (what I consider) poorly designed interfaces, some are way too complicated, some don't export data easily, most require an internet connection, I have privacy concerns with a large number of them, etc, etc.
+<p align="center">
+  <img src="icon.no-bg.cyan.svg" alt="HourGlass Icon" width="128" height="128" />
+</p>
 
-Time tracking in and of itself is rather straightforward (hence all the apps on the app stores), so I figured “why not use this as an opportunity to practice mobile development and learn some new things?”. This app is the result of that question—its a tool that I use every day for work, but also a sample project to work off of and share with others.
+<p align="center">
+  <b>HourGlass</b> is an offline-first, mobile-first time tracking tool. It is designed for developers, freelancers, and professionals who need to keep accurate time sheets without compromising their personal data or suffering from over-engineered, cluttered layouts.
+</p>
 
-## Features
+---
 
-* Offline-only, mobile-first
-* For Android ([Google Play](https://play.google.com/store/apps/details?id=ca.hamaluik.timecop), [F-Droid](https://f-droid.org/packages/ca.hamaluik.timecop/)), [iOS](https://apps.apple.com/us/app/time-cop/id1500711020), and [Linux](https://flathub.org/apps/details/ca.hamaluik.Timecop)
-* Fully private—there is no tracking / spying / advertising / etc
-* Keep track of tasks with multiple parallel timers that can be started with the tap of a button
-* Associate timers with projects to group your work (or don't)
-* Start, stop, edit, and delete timers whenever with no fuss
-* Beautifully visualized **Weekly Visual Productivity Reports and KPI Dashboard** with customizable project-based bar/pie charts and instant PDF export capabilities
-* Export data as a `.csv` file, filtered by timespans and projects
-* Export the app's database for full access to all of its data
-* Automatic light mode / dark mode based on your device settings
-* Localized in several languages (thanks to [Google Translate](https://cloud.google.com/translate)): English, Arabic, German, Spanish, French, Hindi, Japanese, Korean, Portuguese, Russian, Chinese (Simplified), Chinese (Traditional), as well as Italian, Czech, Norwegian, and Indonesian (via contributors)
-* Open source ([licensed under Apache-2.0](LICENSE))—fork away!
+## ✨ Features at a Glance
 
-## Screenshots
+### ⏱️ High-Speed Parallel Timers
+* **Parallel Tracking:** Manage multiple ongoing tasks at once. Start, pause, resume, edit, or delete timers with a single tap.
+* **Project Associations:** Organize your logs by tagging timers with custom-colored project blocks.
 
-<div align="center">
-    <img alt="Screenshot" src="screenshots/ios/dark/en/iPhone Xs Max-Portrait-dashboard.jpg" height="480"> <img alt="Screenshot" src="screenshots/ios/dark/en/iPhone Xs Max-Portrait-editor.jpg" height="480"> <img alt="Screenshot" src="screenshots/ios/dark/en/iPhone Xs Max-Portrait-projects.jpg" height="480"> <img alt="Screenshot" src="screenshots/ios/dark/en/iPhone Xs Max-Portrait-export.jpg" height="480"> <img alt="Screenshot" src="screenshots/ios/dark/en/iPhone Xs Max-Portrait-about.jpg" height="480">
-</div>
+### 🔒 Uncompromising Data Privacy
+* **100% Offline-First:** No accounts required, no internet dependency, and absolutely zero background analytics or tracking.
+* **Database Backups:** Export and import the app's entire SQLite database with one click for full ownership of your records.
 
-More screenshots (including dark-mode and localization demonstrations) are available in the [screenshots/](screenshots/) folder.
+### 🌐 Global Localization
+* **15+ Languages Supported:** Available in English, Spanish, French, German, Portuguese, Hindi, Japanese, Russian, Chinese, Italian, Czech, Norwegian, Indonesian, and more.
 
-## Contributing
+### 📊 Premium Feature: Weekly Visual Productivity Reports [Phase 4 Update]
+HourGlass includes a beautiful **Productivity Dashboard and PDF Exporter** to compile your hours into client-ready sheets:
 
-I'm happy to take bug reports and pull requests if you want to help improve _Time Cop_, but I fundamentally want to keep this app relatively small and simple. If that's not for you, there's [plenty](https://toggl.com/) of [other](https://clockify.me/) [options](https://www.workpuls.com/) [out](https://www.manictime.com/) [there](https://trackabi.com/).
+> [!TIP]
+> **Client-Ready Reports:** Generate rich, multi-page PDF time summaries featuring graphical time-share charts and formatted ledger tables entirely offline.
 
-The app is created pretty much entirely in [Dart](https://dart.dev/) using [Flutter](https://flutter.dev/), and I tried to make heavy use of the [Bloc](https://bloclibrary.dev/#/) pattern.
+---
 
-Here are a few resources to get you started if this is your first Flutter project:
+## 🏗️ Architectural Blueprint
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+The productivity reporting and PDF rendering module is structured under `lib/features/productivity_reports/` using strict **Clean Architecture** and SOLID design rules:
 
-For help getting started with Flutter, view its [online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+lib/features/productivity_reports/
+├── domain/
+│   ├── models/           # Immutable ProductivitySummary and ChartSlice entities
+│   └── repositories/     # Repository contracts defining weekly aggregates and PDF render pipelines
+├── data/
+│   ├── datasources/      # Raw SQLite queries compiling timespans and vector graphics generators
+│   └── repositories/     # Concrete repository implementations invoking document writing APIs
+└── presentation/
+    ├── controllers/      # BLoC cubits managing dashboard statistics and export triggers
+    ├── pages/            # High-fidelity visual dashboard page
+    └── widgets/          # Tabular grids, progress rings, and animated project cards
+```
 
-After [installing and setting up Flutter](https://docs.flutter.dev/get-started/install) (ideally its latest stable version) and downloading the Time Cop code, you should be able to simply [build and run](https://docs.flutter.dev/get-started/test-drive#run-the-app) this Flutter project, at least for mobile platforms. For more information, see the `CONTRIBUTING.md` file.
+---
 
-### Localizations
+## 🛠️ Setup & Installation
 
-You can help translate Time Cop on [Weblate](https://hosted.weblate.org/projects/timecop/). If you notice any incorrect strings, feel free to correct them. Similarly, if you want to add a language, please do!
+### Requirements
+* **Flutter SDK:** Latest Stable Channel
+* **Dart SDK:** Latest Stable Channel
 
-Translations are handled using [Project Fluent](https://projectfluent.org/). Currently all translations except English, Italian, Czech, Norwegian, and Indonesian were auto-translated by [Google Translate](https://cloud.google.com/translate) using my [Translate Tool](https://github.com/hamaluik/translatetool).
+### Step-by-Step Run Guide
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/hamaluik/HourGlass.git
+   cd HourGlass
+   ```
+2. Fetch required dependencies:
+   ```bash
+   flutter pub get
+   ```
+3. Run the static code analyzer:
+   ```bash
+   flutter analyze
+   ```
+4. Compile production release:
+   ```bash
+   flutter build apk --release
+   ```
 
-## Todo
+---
 
-A list of “user stories” (and I use that term very loosely) guiding the development of this app is available in [design/user-stories.md](design/user-stories.md); any unchecked boxes are outstanding items on the todo list!
+## 📄 License
+HourGlass is open-source software licensed under the **Apache-2.0 License**. See [LICENSE](LICENSE) for more details.
+Contributions and feature bug reports are welcome!

@@ -1,4 +1,4 @@
-# Project Plan - timecop
+# Project Plan - HourGlass
 
 ## 1. Current State Assessment
 * **Category:** Productivity Time Tracker

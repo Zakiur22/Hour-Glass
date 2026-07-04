@@ -1,4 +1,4 @@
-# Project Progress - timecop
+# Project Progress - HourGlass
 
 ## Phase 2: Initialization
 - [x] Create project-level `plan.md`
