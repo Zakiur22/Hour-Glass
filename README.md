@@ -1,10 +1,7 @@
-# ⏳ HourGlass
+# ⏳ HourGlass: Simple & Private Time Tracker
 
 
 A simple, secure, and privacy-respecting time tracker that gets the job done without getting in your way.
-
-
-
 
 
 **HourGlass** is an offline-first, mobile-first time tracking tool. It is designed for developers, freelancers, and professionals who need to keep accurate timesheets without compromising their personal data or suffering from over-engineered, cluttered layouts.
