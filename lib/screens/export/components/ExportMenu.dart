@@ -41,7 +41,7 @@ class ExportMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return PopupMenuButton<ExportMenuItem>(
       key: const Key("exportMenuButton"),
-      icon: const Icon(FontAwesomeIcons.database),
+      icon: const FaIcon(FontAwesomeIcons.database),
       onSelected: (ExportMenuItem item) async {
         final scaffoldMessenger = ScaffoldMessenger.of(context);
         final theme = Theme.of(context);
@@ -150,7 +150,7 @@ class ExportMenu extends StatelessWidget {
             key: const Key("exportMenuImport"),
             value: ExportMenuItem.import,
             child: ListTile(
-              leading: const Icon(FontAwesomeIcons.fileImport),
+              leading: const FaIcon(FontAwesomeIcons.fileImport),
               title: Text(L10N.of(context).tr.importDatabase),
             ),
           ),
@@ -158,7 +158,7 @@ class ExportMenu extends StatelessWidget {
             key: const Key("exportMenuExport"),
             value: ExportMenuItem.export,
             child: ListTile(
-              leading: const Icon(FontAwesomeIcons.fileExport),
+              leading: const FaIcon(FontAwesomeIcons.fileExport),
               title: Text(L10N.of(context).tr.exportDatabase),
             ),
           ),

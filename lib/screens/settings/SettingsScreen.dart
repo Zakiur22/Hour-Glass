@@ -163,7 +163,7 @@ class SettingsScreen extends StatelessWidget {
                       if (settings.defaultFilterDays != -1)
                         IconButton(
                           tooltip: L10N.of(context).tr.remove,
-                          icon: const Icon(FontAwesomeIcons.circleMinus),
+                          icon: const FaIcon(FontAwesomeIcons.circleMinus),
                           onPressed: () {
                             settingsBloc.add(const SetDefaultFilterDays(null));
                           },

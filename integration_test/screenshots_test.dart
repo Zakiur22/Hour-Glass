@@ -111,7 +111,7 @@ void main() {
       //Stopping the timer
       Finder stopIcon = find.descendant(
           of: uiLayoutTimer,
-          matching: find.byIcon(FontAwesomeIcons.solidCircleStop));
+          matching: find.byType(FaIcon));
       await tester.tap(stopIcon);
       await tester.pumpAndSettle();
 

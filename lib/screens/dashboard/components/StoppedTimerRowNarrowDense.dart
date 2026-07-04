@@ -15,7 +15,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:intl/intl.dart' as intl;
 import 'package:timecop/blocs/projects/bloc.dart';
 import 'package:timecop/models/timer_entry.dart';
@@ -62,7 +61,7 @@ class StoppedTimerRowNarrowDense extends StatelessWidget {
           SlidableAction(
               backgroundColor: Theme.of(context).colorScheme.error,
               foregroundColor: Theme.of(context).colorScheme.onError,
-              icon: FontAwesomeIcons.trash,
+              icon: Icons.delete,
               onPressed: deleteTimer)
         ],
       ),

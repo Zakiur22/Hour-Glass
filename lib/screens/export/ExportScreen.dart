@@ -213,7 +213,7 @@ class _ExportScreenState extends State<ExportScreen> {
                 FloatingActionButton.extended(
                     heroTag: "csv",
                     label: Text(L10N.of(context).tr.exportCSV),
-                    icon: const Icon(FontAwesomeIcons.fileCsv),
+                    icon: const FaIcon(FontAwesomeIcons.fileCsv),
                     onPressed: () async {
                       final localizations = L10N.of(context);
                       await _export(
@@ -228,7 +228,7 @@ class _ExportScreenState extends State<ExportScreen> {
                 FloatingActionButton.extended(
                     heroTag: "pdf",
                     label: Text(L10N.of(context).tr.exportPDF),
-                    icon: const Icon(FontAwesomeIcons.solidFilePdf),
+                    icon: const FaIcon(FontAwesomeIcons.solidFilePdf),
                     onPressed: () async {
                       final localizations = L10N.of(context);
                       final pdf = await ExportUtils.toPDF(context, _startDate,
