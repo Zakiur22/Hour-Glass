@@ -29,6 +29,10 @@ subprojects {
                 if (namespace == null) {
                     namespace = prj.group.toString()
                 }
+                compileSdkVersion 34
+                defaultConfig {
+                    targetSdkVersion 34
+                }
             }
         }
     }
